@@ -1,0 +1,78 @@
+////////////////////////////////////////////////////////////////////////////////
+///////////////////InstallShield Media Library Report Summary///////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+Media Name      : Final
+Report Filename : E:\Celestial\install_shield\Media\Final\Report Files\12-02-2002 7.10.51PM.rpt
+Date            : 12/02/2002
+Time            : 7:10PM
+
+Number of Components:                2 
+Number of File Groups:               2 
+Number of Files:                     4 
+Total Size of Files:         3,359,879 (bytes)
+
+==========
+COMPONENTS
+==========
+
+
+     Program Files
+     Shared DLLs
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////Report Details/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+================================================================================
+                           COMPONENT: "Program Files"
+================================================================================
+
+SUMMARY:
+    Total Files:                2 (files for this component only)
+    Source Bytes:       2,465,847 (files for this component only)
+
+
+                **** File Group: "Program Executable Files" ****
+
+
+<Directory>: C:\WINDOWS\SYSTEM
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    MFC42.DLL                   02/11/2000  16:58:40      995,383  6.0.8665.0   
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               995,383               
+
+
+<Directory>: E:\Celestial\release_output
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    Zodiac.exe                  12/02/2002  19:03:16    1,470,464  1.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                             1,470,464               
+
+
+================================================================================
+                            COMPONENT: "Shared DLLs"
+================================================================================
+
+SUMMARY:
+    Total Files:                2 (files for this component only)
+    Source Bytes:       3,359,879 (files for this component only)
+
+
+                      **** File Group: "Shared DLLs" ****
+
+
+<Directory>: C:\WINDOWS\SYSTEM
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    OPENGL32.DLL                04/23/1999  22:22:00      753,808  4.0.1381.4   
+    GLU32.DLL                   04/23/1999  22:22:00      140,224  4.0.1381.1   
+    --------------------------  ----------  --------  -----------  -------------
+    Count=2                                               894,032               

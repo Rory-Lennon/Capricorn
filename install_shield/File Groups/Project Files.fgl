@@ -1,0 +1,10 @@
+[TopDir]
+file0=D:\CURRENT\FULL\V2P\Project Files\IXIC-2.XML
+file1=D:\CURRENT\FULL\V2P\Project Files\FTSE.XML
+file2=D:\CURRENT\FULL\V2P\Project Files\IXIC.XML
+file3=D:\CURRENT\FULL\V2P\Project Files\DOW.XML
+
+[General]
+Type=FILELIST
+Version=1.00.000
+

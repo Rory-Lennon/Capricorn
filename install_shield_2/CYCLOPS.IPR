@@ -1,0 +1,53 @@
+[Language]
+LanguageSupport0=0009
+
+[OperatingSystem]
+OSSupport=0000000000010010
+
+[Data]
+CurrentMedia=Final
+set_mifserial=
+ProductName=Cyclops Markets Monitor
+CurrentComponentDef=Default.cdf
+set_dlldebug=No
+AppExe=E:\Celestial\release_output\Zodiac.exe
+DevEnvironment=Microsoft Visual C++ 6
+set_mif=No
+set_testmode=No
+Instructions=Instructions.txt
+EmailAddresss=
+SummaryText=
+Department=
+Type=Database Application
+Author=
+HomeURL=
+InstallRoot=E:\Software\Capricorn\install_shield
+set_level=Level 3
+InstallationGUID=26ecf8cc-2058-4f7f-b2e1-cedca55489bb
+Version=1.1
+set_miffile=Status.mif
+set_args=
+set_maxerr=50
+Notes=Notes.txt
+CurrentFileGroupDef=Default.fdf
+set_dllcmdline=
+set_warnaserr=No
+Copyright=
+set_preproc=
+Category=
+CurrentPlatform=
+set_compileb4build=No
+set_crc=Yes
+set_maxwarn=50
+Description=Description.txt
+CompanyName=Sejika Software
+CurrentLanguage=English
+
+[MediaInfo]
+mediadata0=Final/Media\Final
+mediadata1=New Media/Media\New Media
+
+[General]
+Type=INSTALLMAIN
+Version=1.10.000
+

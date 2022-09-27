@@ -1,0 +1,28 @@
+[Shortcut0]
+Target=<TARGETDIR>\Program Files\Cyclops.exe
+Parameters=
+ShortcutKey=
+SeparateMemorySpace=No
+Run=Normal Window
+IconIndex=
+Replace=Yes
+FileGroup=
+StartIn=<TARGETDIR>\Program Files
+IconFile=E:\Software\Capricorn\RES\Cyclops.ico
+InternetShortcut=No
+DisplayText=PLAY_DTZ
+Comments=
+
+[Data]
+Folder3=<FOLDER_STARTUP>
+Shortcut0=Folder2\Cyclops Markets Monitor
+Group0=Main
+Group1=Startup
+Folder0=<FOLDER_DESKTOP>
+Folder1=<FOLDER_STARTMENU>
+Folder2=<FOLDER_PROGRAMS>
+
+[Info]
+Type=ShellObject
+Version=1.00.000
+

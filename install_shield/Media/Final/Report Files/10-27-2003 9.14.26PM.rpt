@@ -1,0 +1,103 @@
+////////////////////////////////////////////////////////////////////////////////
+///////////////////InstallShield Media Library Report Summary///////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+Media Name      : Final
+Report Filename : D:\CURRENT\FULL\V2P\install_shield\Media\Final\Report Files\10-27-2003 9.14.26PM.rpt
+Date            : 10/27/2003
+Time            : 9:14PM
+
+Number of Components:                3 
+Number of File Groups:               3 
+Number of Files:                    16 
+Total Size of Files:         1,459,666 (bytes)
+
+==========
+COMPONENTS
+==========
+
+
+     Program Files
+     Data Files
+     Project Files
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////Report Details/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+================================================================================
+                           COMPONENT: "Program Files"
+================================================================================
+
+SUMMARY:
+    Total Files:                1 (files for this component only)
+    Source Bytes:         155,648 (files for this component only)
+
+
+                **** File Group: "Program Executable Files" ****
+
+
+<Directory>: D:\CURRENT\FULL\V2P\release output
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    Cyclops.exe                 10/27/2003  20:47:58      155,648  1.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               155,648               
+
+
+================================================================================
+                            COMPONENT: "Data Files"
+================================================================================
+
+SUMMARY:
+    Total Files:               11 (files for this component only)
+    Source Bytes:         788,052 (files for this component only)
+
+
+                       **** File Group: "Data files" ****
+
+
+<Directory>: D:\CURRENT\FULL\V2P\Data Files
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    USD-JPY.TXT                 01/05/2003  19:40:38       58,462               
+    EUR-GOLD.TXT                01/05/2003  17:39:08       47,454               
+    EUR-USD.TXT                 02/09/2003  21:12:38       48,574               
+    FTSE.CSV                    02/02/2003  23:25:30       45,133               
+    GBP-GOLD.TXT                01/05/2003  17:53:56       58,466               
+    GBP-USD.TXT                 02/09/2003  21:17:44       58,654               
+    HSI.CSV                     03/04/2003  23:03:50       62,770               
+    IXIC.CSV                    03/04/2003  22:58:32       65,326               
+    N225.CSV                    03/04/2003  22:54:38       61,289               
+    USD-GOLD.TXT                01/05/2003  17:46:40       58,462               
+    DJI.CSV                     03/04/2003  22:59:34       67,814               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=11                                              632,404               
+
+
+================================================================================
+                           COMPONENT: "Project Files"
+================================================================================
+
+SUMMARY:
+    Total Files:                4 (files for this component only)
+    Source Bytes:       1,459,666 (files for this component only)
+
+
+                     **** File Group: "Project Files" ****
+
+
+<Directory>: D:\CURRENT\FULL\V2P\Project Files
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    IXIC-2.XML                  07/15/2003  19:53:38      205,646               
+    FTSE.XML                    03/23/2003  16:14:18       54,832               
+    IXIC.XML                    03/23/2003  18:53:38      205,646               
+    DOW.XML                     03/23/2003  19:28:28      205,490               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=4                                               671,614               

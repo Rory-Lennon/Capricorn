@@ -1,0 +1,672 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_CYCLOPS             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_TREE                BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_LONG_GREEN          BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_TL_OFF              BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        ID_FILE_NEW
+        MENUITEM "&Open...",                    ID_FILE_OPEN
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Import...",                  ID_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Recent Project File",        ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Cyclops Markets Monitor...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 297, 281
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Cyclops Markets Monitor..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Cyclops Markets Monitor",IDC_STATIC,150,25,125,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002 Sejika Software",IDC_STATIC,150,55,
+                    125,8
+    DEFPUSHBUTTON   "OK",IDOK,140,260,150,14,WS_GROUP
+    LTEXT           "All Rights Reserved Globally",IDC_STATIC,150,70,125,8
+    LTEXT           "For help and program updates:",IDC_STATIC,150,215,130,8
+    LTEXT           "www.sejika.com",IDC_STATIC,150,230,110,8
+    GROUPBOX        "Help",IDC_STATIC,140,200,150,50
+    GROUPBOX        "About",IDC_STATIC,140,10,150,80
+    CONTROL         138,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,10,15,119,
+                    137
+    LTEXT           "Version 2.0 Professional Edition",IDC_STATIC,150,40,122,
+                    8
+    GROUPBOX        "Licensed to",IDC_STATIC,140,100,150,90
+    LTEXT           "Rory F Lennon",IDC_STATIC,150,115,130,10
+    LTEXT           "42 Westbourne Gardens",IDC_STATIC,150,130,130,8
+    LTEXT           "Glasgow G12 9XQ",IDC_STATIC,150,145,130,8
+END
+
+IDD_CALC DIALOG DISCARDABLE  0, 0, 186, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Cyclops - Calculating..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROG,"msctls_progress32",WS_BORDER,10,10,
+                    165,10
+    PUSHBUTTON      "&Cancel",IDC_BUT_END,45,30,90,14
+END
+
+IDD_LIST DIALOGEX 0, 0, 171, 391
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREEDATA,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | 
+                    WS_TABSTOP,5,10,110,160,WS_EX_CLIENTEDGE
+    CONTROL         "Tree1",IDC_TREECTRLS,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_SHOWSELALWAYS | WS_TABSTOP,5,180,110,
+                    110,WS_EX_CLIENTEDGE
+END
+
+IDD_RESULTS DIALOG DISCARDABLE  0, 0, 256, 121
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Result Sets",IDC_STATIC,5,5,90,50
+    PUSHBUTTON      "+",IDC_BUT_UP,40,20,20,10
+    PUSHBUTTON      "-",IDC_BUT_DOWN,15,20,20,10
+    RTEXT           "% / Year",IDC_STATIC,40,35,30,8
+    EDITTEXT        IDS_GAIN,15,35,20,12,ES_RIGHT | ES_READONLY | ES_NUMBER | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_RES_NUM,65,20,15,12,ES_RIGHT | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Capricorn MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Capricorn\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Capricorn.EXE\0"
+            VALUE "ProductName", "Capricorn Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_CALC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 384
+    END
+
+    IDD_RESULTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LOWER               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_UPPER               ICON    DISCARDABLE     "res\\upper.ico"
+IDI_CURRENT             ICON    DISCARDABLE     "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Cyclops Markets Monitor"
+    ID_VIEW                 "View"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Cyclops Markets Monitor"
+    AFX_IDS_IDLEMESSAGE     "        "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Exit Cyclops Markets Monitor\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_DATE                "                              "
+    IDS_CURRENCY            "                                                 "
+    IDS_RECOMMEND           "            "
+    IDS_CONVERSION          "                      "
+    IDS_LEFT                "                                                 "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "New Cyclops Project"
+    ID_FILE_OPEN            "Open An Existing Cyclops Project File"
+    ID_FILE_SAVE            "Save The Current Cyclops Project"
+    ID_FILE_SAVE_AS         "Save The Current Cyclops Project As..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_IMPORT               "Import Raw Data From File"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Recent Cyclops Project"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RANGE DIALOG DISCARDABLE  0, 0, 502, 122
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_START_DAY,55,25,15,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_MONTH,35,25,15,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_YEAR,75,25,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_MONTH,35,41,15,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_DAY,55,41,15,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_YEAR,75,41,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Start",IDC_STATIC,15,25,16,8
+    LTEXT           "End",IDC_STATIC,15,41,14,8
+    RTEXT           "MM",IDC_STATIC,35,15,13,8
+    RTEXT           "DD",IDC_STATIC,55,15,12,8
+    RTEXT           "YYYY",IDC_STATIC,75,15,21,8
+    GROUPBOX        "Time Range",IDC_STATIC,0,0,175,65
+    CONTROL         "Zero Base",IDC_BASE_ZERO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,270,20,50,10
+    PUSHBUTTON      "&Apply",IDC_BUT_APPLY,111,20,50,14
+    PUSHBUTTON      "&Limits",IDC_BUT_LIMITS,111,40,50,14
+    CONTROL         "Spin1",IDC_ZOOM,"msctls_updown32",UDS_ARROWKEYS | 
+                    UDS_HORZ,236,35,25,15
+    CONTROL         "Spin2",IDC_PAN,"msctls_updown32",UDS_ARROWKEYS | 
+                    UDS_HORZ,200,35,25,15
+    LTEXT           "Pan",IDC_STATIC,200,20,14,8
+    LTEXT           "Zoom",IDC_STATIC,236,20,19,8
+    GROUPBOX        "Zoom",IDC_STATIC,190,0,140,65
+END
+
+IDD_BASE DIALOG DISCARDABLE  0, 0, 132, 307
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "Courier New"
+BEGIN
+END
+
+IDD_DIFF DIALOG DISCARDABLE  0, 0, 407, 107
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "1st Differential",IDC_BUT_DIFF1,30,15,90,14
+    GROUPBOX        "Differentials",IDC_STATIC,0,0,130,65
+    PUSHBUTTON      "2nd Differential",IDC_BUT_DIFF2,30,35,90,14
+    CONTROL         "",IDC_RAD_D1,"Button",BS_AUTORADIOBUTTON,10,15,10,10
+    CONTROL         "Radio2",IDC_RAD_D2,"Button",BS_AUTORADIOBUTTON,10,35,10,
+                    10
+    GROUPBOX        "Data 3",IDC_STATIC,145,0,130,65
+    PUSHBUTTON      "D&3",IDC_BUT_DIFF3,175,15,90,14
+    CONTROL         "Radio2",IDC_RAD_D3,"Button",BS_AUTORADIOBUTTON,155,15,
+                    10,10
+END
+
+IDD_ANALYSE DIALOG DISCARDABLE  0, 0, 572, 92
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Analysis",IDC_STATIC,0,0,215,65
+    PUSHBUTTON      "&Process",IDC_BUT_PROCESS,115,15,90,14
+    EDITTEXT        IDE_IN,65,40,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Input",IDC_STATIC,10,40,25,8
+    LTEXT           "Output",IDC_STATIC,240,15,35,8
+    RTEXT           "",IDC_OUTPUT,285,15,35,8
+    LTEXT           "Gain",IDC_STATIC,240,30,25,8
+    RTEXT           "",IDC_GAIN,285,30,35,8
+    GROUPBOX        "Report",IDC_STATIC,230,0,120,65
+    EDITTEXT        IDE_TT,65,15,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Transaction\nCharge",IDC_STATIC,10,15,45,20
+    LTEXT           "Gain/Year",IDC_STATIC,240,45,45,8
+    LTEXT           "%",IDC_STATIC,325,30,10,8
+    RTEXT           "",IDS_GNY,285,45,35,8
+    LTEXT           "%",IDC_STATIC,325,46,8,8
+END
+
+IDD_FLAGS DIALOGEX 0, 0, 592, 132
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_ARROWKEYS,415,25,
+                    11,23
+    GROUPBOX        "Flags (%)",IDC_STATIC,295,0,145,65
+    EDITTEXT        IDE_BC,385,30,21,11,ES_RIGHT | ES_AUTOHSCROLL
+    GROUPBOX        "Ratio",IDC_STATIC,115,0,165,65
+    EDITTEXT        IDE_RC,245,30,25,11,ES_RIGHT | ES_NUMBER
+    ICON            IDI_UPPER,IDC_STATIC,160,10,20,20,0,WS_EX_TRANSPARENT
+    ICON            IDI_CURRENT,IDC_STATIC,250,10,20,20,0,WS_EX_TRANSPARENT
+    ICON            IDI_CURRENT,IDC_STATIC,385,10,21,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDE_ML,10,30,17,11,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDE_MU,35,30,17,11,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDE_MC,70,30,17,11,ES_RIGHT | ES_AUTOHSCROLL
+    GROUPBOX        "Time Sub-Range (Days)",IDC_STATIC,0,0,100,65
+    ICON            IDI_LOWER,IDC_STATIC,10,10,20,20,0,WS_EX_TRANSPARENT
+    ICON            IDI_UPPER,IDC_STATIC,35,10,20,20,0,WS_EX_TRANSPARENT
+    ICON            IDI_CURRENT,IDC_STATIC,70,10,20,20,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Process",IDC_STATIC,455,0,110,65
+    PUSHBUTTON      "&Update",IDC_BUT_UPDATE,465,25,90,14
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",WS_TABSTOP,125,
+                    30,57,25
+    ICON            IDI_LOWER,IDC_STATIC,125,10,20,20,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDR_FINE,"Button",BS_AUTORADIOBUTTON,335,20,10,8
+    CONTROL         "",IDR_COARSE,"Button",BS_AUTORADIOBUTTON,335,40,10,8
+    ICON            IDI_LOWER,IDC_STATIC,345,30,21,20,0,WS_EX_TRANSPARENT
+    ICON            IDI_UPPER,IDC_STATIC,345,10,21,20,0,WS_EX_TRANSPARENT
+    LTEXT           "Resolution",IDC_STATIC,195,15,40,8
+    EDITTEXT        IDS_RESOLUTION,205,30,25,12,ES_RIGHT | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Fine",IDC_STATIC,305,20,14,8
+    LTEXT           "Coarse",IDC_STATIC,305,40,23,8
+END
+
+IDD_MEDIAN DIALOG DISCARDABLE  0, 0, 607, 92
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Add New Data Point",-1,0,0,235,65
+    EDITTEXT        IDE_ADD_DAY,66,25,15,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDE_ADD_MONTH,46,25,15,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDE_ADD_YEAR,86,25,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "MM",-1,46,15,13,8
+    RTEXT           "DD",-1,66,15,12,8
+    RTEXT           "YYYY",-1,86,15,21,8
+    EDITTEXT        IDE_ADD_VAL,46,40,65,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Value",-1,20,40,20,10
+    LTEXT           "Date",-1,20,26,20,8
+    PUSHBUTTON      "&Add",IDC_BUT_NEW_APPLY,126,20,90,14
+    PUSHBUTTON      "&Undo",IDC_BUT_UNDO,126,40,90,14
+END
+
+IDD_IMPORT DIALOG DISCARDABLE  0, 0, 607, 92
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_COL_DATE,195,20,20,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Dates In Column Number",IDC_STATIC,100,20,90,8
+    EDITTEXT        IDE_COL_VAL,195,36,20,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Values In Column Number",IDC_STATIC,100,36,90,8
+    GROUPBOX        "Import",IDC_STATIC,85,0,145,65
+    PUSHBUTTON      "&Move Up",IDB_MOVE_UP,10,15,50,14
+    GROUPBOX        "Data Set",IDC_STATIC,0,0,70,65
+    PUSHBUTTON      "&Delete",IDB_DELETE,10,35,50,14
+END
+
+IDD_INFO DIALOG DISCARDABLE  0, 0, 607, 92
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Potential Gain (% / Year)",IDC_STATIC,0,0,145,65
+    LTEXT           "Raw Data",IDC_STATIC,15,30,33,8
+    LTEXT           "Median",IDC_STATIC,15,46,24,8
+    RTEXT           "Max",IDC_STATIC,70,15,25,8
+    RTEXT           "Min",IDC_STATIC,110,15,25,8
+    GROUPBOX        "Notes",IDC_STATIC,160,0,275,65
+    EDITTEXT        IDE_CURRENCY,220,40,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_COMMENT,220,20,195,12,ES_AUTOHSCROLL
+    LTEXT           "Currency:",IDC_STATIC,175,40,35,8
+    LTEXT           "Comment:",IDC_STATIC,175,20,35,8
+    EDITTEXT        IDE_MAXV,70,30,25,12,ES_RIGHT | ES_READONLY | ES_NUMBER | 
+                    NOT WS_BORDER
+    EDITTEXT        IDE_MINV,110,30,25,12,ES_RIGHT | ES_READONLY | ES_NUMBER | 
+                    NOT WS_BORDER
+    EDITTEXT        IDE_MAXA,70,45,25,12,ES_RIGHT | ES_READONLY | ES_NUMBER | 
+                    NOT WS_BORDER
+    EDITTEXT        IDE_MINA,110,45,25,12,ES_RIGHT | ES_READONLY | ES_NUMBER | 
+                    NOT WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_RANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 495
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_BASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+    END
+
+    IDD_DIFF, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_ANALYSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 565
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_FLAGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 585
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_MEDIAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 600
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 600
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 600
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CAPRICORN           ICON    DISCARDABLE     "res\\Cyclops.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Capricorn.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Capricorn.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

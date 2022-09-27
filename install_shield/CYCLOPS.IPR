@@ -1,0 +1,53 @@
+[Language]
+LanguageSupport0=0009
+
+[OperatingSystem]
+OSSupport=0000000000010010
+
+[Data]
+CurrentMedia=Final
+CurrentComponentDef=Default.cdf
+ProductName=Cyclops Markets Monitor
+set_mifserial=
+DevEnvironment=Microsoft Visual C++ 6
+AppExe=E:\current\V2D\release output\Cyclops.exe
+set_dlldebug=No
+EmailAddresss=
+Instructions=Instructions.txt
+set_testmode=No
+set_mif=No
+SummaryText=
+Department=
+HomeURL=
+Author=
+Type=Financial Markets Application
+InstallRoot=D:\CURRENT\FULL\V2P\install_shield
+Version=2.0
+InstallationGUID=26ecf8cc-2058-4f7f-b2e1-cedca55489bb
+set_level=Level 3
+CurrentFileGroupDef=Default.fdf
+Notes=Notes.txt
+set_maxerr=50
+set_args=
+set_miffile=Status.mif
+set_dllcmdline=
+Copyright=Sejika Software 2002
+set_warnaserr=No
+CurrentPlatform=
+Category=
+set_preproc=
+CurrentLanguage=English
+CompanyName=Sejika Software
+Description=Description.txt
+set_maxwarn=50
+set_crc=Yes
+set_compileb4build=No
+
+[MediaInfo]
+mediadata0=Final/Media\Final
+mediadata1=New Media/Media\New Media
+
+[General]
+Type=INSTALLMAIN
+Version=1.10.000
+

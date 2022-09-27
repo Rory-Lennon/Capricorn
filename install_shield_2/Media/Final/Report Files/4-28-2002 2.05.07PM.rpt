@@ -1,0 +1,124 @@
+////////////////////////////////////////////////////////////////////////////////
+///////////////////InstallShield Media Library Report Summary///////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+Media Name      : Final
+Report Filename : G:\projects\Gemini\install_shield\Media\Final\Report Files\4-28-2002 2.05.07PM.rpt
+Date            : 04/28/2002
+Time            : 2:05PM
+
+Number of Components:                4 
+Number of File Groups:               4 
+Number of Files:                     8 
+Total Size of Files:         2,212,736 (bytes)
+
+==========
+COMPONENTS
+==========
+
+
+     Program Files
+     Example Files
+     Help Files
+     Shared DLLs
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////Report Details/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+================================================================================
+                           COMPONENT: "Program Files"
+================================================================================
+
+SUMMARY:
+    Total Files:                2 (files for this component only)
+    Source Bytes:       1,191,991 (files for this component only)
+
+
+                **** File Group: "Program Executable Files" ****
+
+
+<Directory>: G:\projects\Gemini\Jiki
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    Gemini.exe                  04/28/2002  12:55:50      196,608  1.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               196,608               
+
+
+<Directory>: C:\WINDOWS\SYSTEM
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    MFC42.DLL                   02/11/2000  16:58:40      995,383  6.0.8665.0   
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               995,383               
+
+
+================================================================================
+                           COMPONENT: "Example Files"
+================================================================================
+
+SUMMARY:
+    Total Files:                2 (files for this component only)
+    Source Bytes:       1,194,754 (files for this component only)
+
+
+                     **** File Group: "Example Files" ****
+
+
+<Directory>: G:\projects\Gemini\Jiki\example_files
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    game-8.gni                  05/26/2001  16:46:42        1,501               
+    game-1.gni                  06/16/2001  17:05:50        1,262               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=2                                                 2,763               
+
+
+================================================================================
+                            COMPONENT: "Help Files"
+================================================================================
+
+SUMMARY:
+    Total Files:                2 (files for this component only)
+    Source Bytes:       1,318,704 (files for this component only)
+
+
+                       **** File Group: "Help Files" ****
+
+
+<Directory>: G:\projects\Gemini\Jiki\hlp
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    Gemini.HLP                  04/28/2002  12:20:36      123,830               
+    Gemini.cnt                  08/17/2001  21:40:56          120               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=2                                               123,950               
+
+
+================================================================================
+                            COMPONENT: "Shared DLLs"
+================================================================================
+
+SUMMARY:
+    Total Files:                2 (files for this component only)
+    Source Bytes:       2,212,736 (files for this component only)
+
+
+                      **** File Group: "Shared DLLs" ****
+
+
+<Directory>: C:\WINDOWS\SYSTEM
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    OPENGL32.DLL                04/23/1999  22:22:00      753,808  4.0.1381.4   
+    GLU32.DLL                   04/23/1999  22:22:00      140,224  4.0.1381.1   
+    --------------------------  ----------  --------  -----------  -------------
+    Count=2                                               894,032               

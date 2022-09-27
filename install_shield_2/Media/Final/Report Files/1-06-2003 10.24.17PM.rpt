@@ -1,0 +1,94 @@
+////////////////////////////////////////////////////////////////////////////////
+///////////////////InstallShield Media Library Report Summary///////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+Media Name      : Final
+Report Filename : E:\Software\Capricorn\install_shield\Media\Final\Report Files\1-06-2003 10.24.17PM.rpt
+Date            : 01/06/2003
+Time            : 10:24PM
+
+Number of Components:                3 
+Number of File Groups:               3 
+Number of Files:                     7 
+Total Size of Files:           422,906 (bytes)
+
+==========
+COMPONENTS
+==========
+
+
+     Program Files
+     Data Files
+     No Read
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////Report Details/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+================================================================================
+                           COMPONENT: "Program Files"
+================================================================================
+
+SUMMARY:
+    Total Files:                1 (files for this component only)
+    Source Bytes:          94,208 (files for this component only)
+
+
+                **** File Group: "Program Executable Files" ****
+
+
+<Directory>: E:\Software\Capricorn\release output
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    Cyclops.exe                 01/06/2003  20:30:00       94,208  1.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                                94,208               
+
+
+================================================================================
+                            COMPONENT: "Data Files"
+================================================================================
+
+SUMMARY:
+    Total Files:                1 (files for this component only)
+    Source Bytes:         141,600 (files for this component only)
+
+
+                       **** File Group: "Data files" ****
+
+
+<Directory>: E:\Software\Capricorn\Data Files\No Read
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    eur-usd.txt                 01/03/2003  20:58:28       47,392               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                                47,392               
+
+
+================================================================================
+                              COMPONENT: "No Read"
+================================================================================
+
+SUMMARY:
+    Total Files:                5 (files for this component only)
+    Source Bytes:         422,906 (files for this component only)
+
+
+                        **** File Group: "No Read" ****
+
+
+<Directory>: E:\Software\Capricorn\Data Files\No Read
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    eur-gold.txt                01/05/2003  17:39:08       47,454               
+    gbp-gold.txt                01/05/2003  17:53:56       58,466               
+    gbp-usd.txt                 01/05/2003  16:53:10       58,462               
+    usd-jpy.txt                 01/05/2003  19:40:38       58,462               
+    usd-gold.txt                01/05/2003  17:46:40       58,462               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=5                                               281,306               

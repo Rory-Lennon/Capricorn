@@ -1,0 +1,11 @@
+[TopDir]
+file0=E:\Software\Capricorn\Data Files\No Read\eur-gold.txt
+file1=E:\Software\Capricorn\Data Files\No Read\gbp-gold.txt
+file2=E:\Software\Capricorn\Data Files\No Read\gbp-usd.txt
+file3=E:\Software\Capricorn\Data Files\No Read\usd-jpy.txt
+file4=E:\Software\Capricorn\Data Files\No Read\usd-gold.txt
+
+[General]
+Type=FILELIST
+Version=1.00.000
+

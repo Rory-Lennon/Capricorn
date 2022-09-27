@@ -1,0 +1,25 @@
+[Data]
+TITLE_MAIN=Cyclops Markets Monitor
+COMPANY_NAME=Sejika Software
+ERROR_COMPONENT=Component:
+COMPANY_NAME16=Company
+PRODUCT_VERSION=1.0
+ERROR_MOVEDATA=An error occurred during the move data process: %d
+ERROR_FILEGROUP=File Group:
+START_FOLDER=Cyclops Markets Monitor
+UNINST_KEY=Cyclops Markets Monitor
+TITLE_CAPTIONBAR=Cyclops Markets Monitor
+ERROR_VGARESOLUTION=This program requires VGA or better resolution.
+ERROR_FILE=File:
+FOLDER_NAME=Cyclops Markets Monitor
+PRODUCT_KEY=Cyclops.exe
+UNINST_DISPLAY_NAME=Cyclops Markets Monitor
+PLAY_DTZ=Cyclops Markets Monitor
+PRODUCT_NAME=Cyclops Markets Monitor
+ERROR_UNINSTSETUP=unInstaller setup failed to initialize.  You may not be able to uninstall this product.
+
+[General]
+Language=0009
+Type=STRINGTABLESPECIFIC
+Version=1.00.000
+
